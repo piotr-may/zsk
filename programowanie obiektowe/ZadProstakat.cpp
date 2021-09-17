@@ -24,15 +24,15 @@ void Rectengle::showAllData(){
 	cout<<"Bok a: "<<a<<
 		"\nBok b: "<<b<<
 		"\nPole: "<<Pole()<<
-		"\nObwód: "<<Obwod()<<endl;
+		"\nObwÃ³d: "<<Obwod()<<endl;
 }
 
 int main(){
 	setlocale(LC_CTYPE,"polish");
-	//klasa prostok¹t
-	//2 wlaœciwoœci
-	//prototypy pole, obwód, zwracaj¹cy pole, zwracaj¹cy obwód, wyœwietlaj¹cy dane pola, wyœwietlaj¹cy d³ boków oraz pole i obwód
-	//u¿ytkownik daje dane z klawiatury
+	//klasa prostokÄ…t
+	//2 wlaÅ›ciwoÅ›ci
+	//prototypy pole, obwÃ³d, zwracajÄ…cy pole, zwracajÄ…cy obwÃ³d, wyÅ›wietlajÄ…cy dane pola, wyÅ›wietlajÄ…cy dÅ‚ bokÃ³w oraz pole i obwÃ³d
+	//uÅ¼ytkownik daje dane z klawiatury
 	Rectengle prostokat;//=Rectengle();
 	cout<<"Podaj bok a\n";
 	cin>>prostokat.a;
