@@ -3,7 +3,7 @@ using namespace std;
 
 class Worker{
 	public:
-//deklaracja zmiennych cz¹stkowych (pola, cechy,w³aœciwoœci)
+//deklaracja zmiennych czÂ¹stkowych (pola, cechy,wÂ³aÅ“ciwoÅ“ci)
 	unsigned short int yearBrithday;
 	float height;
 	char gender; 
@@ -19,15 +19,15 @@ class Worker{
 		surename(Isurename),
 		nationality(Inationality),
 		gender(Igender)
-		{cout<<"Stwo¿ono obiekt Worker\n\n";
+		{cout<<"StwoÂ¿ono obiekt Worker\n\n";
 		}
 		
-	//deklaracja funkcji cz³¹kowskiej
+	//deklaracja funkcji czÂ³Â¹kowskiej
 	void showName(){
-		cout<<"Imiê pracownika: "<<name<<endl;
+		cout<<"ImiÃª pracownika: "<<name<<endl;
 	}
 
-	//deklaracja (prototyp) funkcji cz³¹kowskiej
+	//deklaracja (prototyp) funkcji czÂ³Â¹kowskiej
 	void showSurename();
 	void ShowAllData();	
 	void showPersonality();
@@ -39,14 +39,14 @@ void Worker::showSurename(){
 };
 void Worker::ShowAllData(){
 	showPersonality();
-	cout<<"Narodowoœæ: "<<nationality
+	cout<<"NarodowoÅ“Ã¦: "<<nationality
 		<<"\nRok urodzenia: "<<yearBrithday
 		<<"\nWzrost: "<<height<<"m"<<endl;
-//	if(gender=='m') cout<<"Mêszczyzna"<<endl;
+//	if(gender=='m') cout<<"MÃªszczyzna"<<endl;
 //	else if(gender=='f') cout<<"Kobieta"<<endl;
 //	else cout<<"-";
 	switch(gender){
-		case 'm': cout<<"Mêszczyzna"; break;
+		case 'm': cout<<"MÃªszczyzna"; break;
 		case 'k': cout<<"Kobieta"; break;
 		default: cout<<"-";break;	
 	}
