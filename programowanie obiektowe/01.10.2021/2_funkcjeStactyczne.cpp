@@ -11,6 +11,11 @@ class School {
 		string surename;
 		void getData();
 		void setNameSurename(string name,string surename);
+		
+		static string s_getSchool();
+		static void s_setSchool(string pSchool){
+			s_school=pSchool;
+		}
 };
 
 void School::getData(){
@@ -21,6 +26,12 @@ void School::setNameSurename(string pName,string pSurename){
 	name=pName;
 	surename=pSurename;
 }
+
+string School::s_getSchool(){
+	return s_school;
+}
+
+
 
 string School::s_school = "ZSK";
 string School::s_jobPosition="student";
@@ -40,6 +51,9 @@ int main(){
 	cout<<"Nowe stanowisko: "<<kowal.s_jobPosition<<endl;
 	cout<<"Nowe stanowisko: "<<School::s_jobPosition<<endl;
 	
+	cout<<School::s_getSchool()<<endl;
+	School::s_setSchool("ZS³³³³");
+	cout<<School::s_getSchool()<<endl;
 	
 	
 	return 0;
