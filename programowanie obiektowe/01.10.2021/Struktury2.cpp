@@ -21,14 +21,14 @@ void Worker::showAllData(){
 	<<"\nImie i Nazwisko: "<<name<<" "<<surename
 	<<"\nData urodzenia: "<<dateBirdthday.dd
 	<<"-"<<dateBirdthday.mm
-	<<"-"<<dateBirdthday.yyyy<<endl;
+	<<"-"<<dateBirdthday.yyyy<<"r.\n";
 };
 
-void Worker::setData(unsigned int id1,string name1,string surename1,Date dateBirdthday1){
-	id=id1;
-	name=name1;
-	surename=surename1;
-	dateBirdthday=dateBirdthday1;
+void Worker::setData(unsigned int id,string name,string surename,Date dateBirdthday){
+	Worker::id=id;
+	Worker::name=name;
+	Worker::surename=surename;
+	Worker::dateBirdthday=dateBirdthday;
 };
 
 int main(){
