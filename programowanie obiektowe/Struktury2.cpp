@@ -1,8 +1,9 @@
 #include<iostream>
+
 using namespace std;
 
 struct Date{
-	unsigned short int dd,mm, rrrr;
+	unsigned short int dd,mm, yyyy;
 };
 
 class Worker{
@@ -17,17 +18,17 @@ class Worker{
 
 void Worker::showAllData(){
 	cout<<"Dane pracownika:\nIdentyfikator pracownika: "<<id
-	<<"\nImiê i Nazwisko: "<<name<<" "<<surename
+	<<"\nImie i Nazwisko: "<<name<<" "<<surename
 	<<"\nData urodzenia: "<<dateBirdthday.dd
 	<<"-"<<dateBirdthday.mm
-	<<"-"<<dateBirdthday.rrrr<<endl;
+	<<"-"<<dateBirdthday.yyyy<<"r.\n";
 };
 
-void Worker::setData(unsigned int id1,string name1,string surename1,Date dateBirdthday1){
-	id=id1;
-	name=name1;
-	surename=surename1;
-	dateBirdthday=dateBirdthday1;
+void Worker::setData(unsigned int id,string name,string surename,Date dateBirdthday){
+	Worker::id=id;
+	Worker::name=name;
+	Worker::surename=surename;
+	Worker::dateBirdthday=dateBirdthday;
 };
 
 int main(){
