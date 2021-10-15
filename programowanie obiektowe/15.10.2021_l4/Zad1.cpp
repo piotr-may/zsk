@@ -46,8 +46,8 @@ void Dog::showAll(){
 	cout<<"Kolor: "<<color<<"\nKolor oczu: "<<eyeColor
 		<<"\nPies wabi siê: "<<name
 		<<"\nPies jest resy: "<<spiece
-		<<"\nPies ma wyniary: "<<height<<" "<<lenght
-		<<"\nPies wa¿y: "<<weight<<endl;
+		<<"\nPies ma wyniary: "<<height<<"m "<<lenght<<"m"
+		<<"\nPies wa¿y: "<<weight<<"kg"<<endl;
 	sit();
 	layDown();
 	shake();
@@ -60,5 +60,5 @@ int main(){
 	Dog dszorcz("Czerwony","Brak","Dszorcz","Nieznana",1233,0.1,2222222);
 	dszorcz.showAll();
 	
-	return 0;
+	return 1;
 }
