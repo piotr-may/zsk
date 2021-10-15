@@ -13,13 +13,29 @@ class Worker {
 		
 		void getData();
 		
+		Worker();
+		
+		Worker(int id);
+		
+		Worker(int id, string name, string surname);
+		
 		Worker(int,string,string,Date);
 };
 	
 void Worker::getData(){
 		cout<<"Id: "<<id<<"\nImiê i nazwisko: "<<name
 		<<" "<<surname<<"\nData urodzenia: "<<dateBridthday.dd<<"-"
-		<<dateBridthday.mm<<"-"<<dateBridthday.yyyy;
+		<<dateBridthday.mm<<"-"<<dateBridthday.yyyy<<endl;
+}
+
+Worker::Worker(int pId){
+	id=pId;
+}
+
+Worker::Worker(int pId, string pName,string pSurname){
+	id=pId;
+	name=pName;
+	surname=pSurname;
 }
 
 Worker::Worker(int pId, string pName,string pSurname,Date pDateBridthday){
@@ -32,10 +48,14 @@ Worker::Worker(int pId, string pName,string pSurname,Date pDateBridthday){
 int main(){
 	setlocale(LC_CTYPE,"polish");
 	
-	Worker nowak(999,"Janusz","Nowak",{12,65,1401});
+	Worker nowak(999);
 	nowak.getData();
 	
+	Worker kowalski(1341245);
+	kowalski.getData();
 	
+	Worker areczek(12,"Areczek","23ds");
+	areczek.getData();
 	
 	return 0;
 }
