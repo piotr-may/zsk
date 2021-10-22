@@ -10,8 +10,7 @@ class Car{
 		
 		void getData();
 		
-		Car();
-		Car(unsigned int pId, string pBrand, string pModel);
+		Car(unsigned int pId =5, string pBrand ="Audi", string pModel="A6");
 };
 
 void Car::getData(){
@@ -20,12 +19,6 @@ void Car::getData(){
 		<<"\nModel: "<<model<<endl;
 }
 
-Car::Car(){
-	//cout<<"Konstruktor bezparametrowy\n";
-	id=3;
-	brand="Fiat";
-	model="126p";
-}
 
 Car::Car(unsigned int pId, string pBrand, string pModel){
 	cout<<"\nKonstruktor paramertowy\n";
@@ -38,10 +31,22 @@ int main(){
 	setlocale(LC_CTYPE,"polish");
 	Car car;
 	car.getData();
-	Car car1 = Car(2321,"nieznana","XD346");
+	
+	Car car1 = Car();
 	car1.getData();
-	Car car2 = Car();
+	
+	Car car2 = Car(2321,"nieznana","XD346");
 	car2.getData();
+	
+	Car car3(1,"Passat");
+	car3.getData();
+	
+	Car car4 = Car(7,"Bugatti","Veyron");
+	car4.getData();
+	
+	
+	
+	
 	
 	
 	return 2;
