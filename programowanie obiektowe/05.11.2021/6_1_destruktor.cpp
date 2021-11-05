@@ -43,9 +43,12 @@ int main() {
 	nowak.getData();
 	Worker kowalski = Worker("Kamil", "Nowak");
 	
-	
 	createObjectWorker();
 	
+	cout<<"\nWskaŸnik\n";
+	Worker *p_kowalski = new Worker("Jan", "Kowalki");
+	p_kowalski->getData(); 
+	delete p_kowalski;
 	
 	return 0;
 }
