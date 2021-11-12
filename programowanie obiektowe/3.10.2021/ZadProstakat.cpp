@@ -30,7 +30,7 @@ void Rectengle::showAllData(){
 int main(){
 	setlocale(LC_CTYPE,"polish");
 	//klasa prostok膮t
-	//2 wla艣ciwo艣ci
+	//2 wla砤沜iwo渨o渃i
 	//prototypy pole, obw贸d, zwracaj膮cy pole, zwracaj膮cy obw贸d, wy艣wietlaj膮cy dane pola, wy艣wietlaj膮cy d艂 bok贸w oraz pole i obw贸d
 	//u偶ytkownik daje dane z klawiatury
 	Rectengle prostokat;//=Rectengle();
