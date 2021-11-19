@@ -30,17 +30,17 @@ int main() {
 	Animal *p_dog = new Animal();
 	delete p_dog;
 	
-//	Animal dog2;
-//	Animal dog3;
-//	Animal dog4;
-//	Animal dog5;
-//	Animal dog6;
-//	Animal dog7;
-//	Animal dog8;
-//	Animal dog9;
-//	Animal dogl0;
-//	Animal dog11;
-//	Animal dog12;
+	Animal dog2;
+	Animal dog3;
+	Animal dog4;
+	Animal dog5;
+	Animal dog6;
+	Animal dog7;
+	Animal dog8;
+	Animal dog9;
+	Animal dogl0;
+	Animal dog11;
+	Animal dog12;
 	
 	return 0;
 }
