@@ -27,27 +27,27 @@ Dog::Dog(string pColor,string pEyeColor,string pName,string pSpiece,float pHeigh
 }
 
 void Dog::sit(){
-	cout<<"Pies usiad³\n";
+	cout<<"Pies usiadï¿½\n";
 }
 
 void Dog::layDown(){
-	cout<<"Pies siê po³o¿y³\n";
+	cout<<"Pies siï¿½ poï¿½oï¿½yï¿½\n";
 }
 
 void Dog::shake(){
-	cout<<"Pies zrobi³ shake truskawkowy\n";
+	cout<<"Pies zrobiï¿½ shake truskawkowy\n";
 }
 
 void Dog::come(){
-	cout<<"Pies przyszed³\n";
+	cout<<"Pies przyszedÅ‚\n";
 }
 
 void Dog::showAll(){
 	cout<<"Kolor: "<<color<<"\nKolor oczu: "<<eyeColor
-		<<"\nPies wabi siê: "<<name
+		<<"\nPies wabi siï¿½: "<<name
 		<<"\nPies jest resy: "<<spiece
 		<<"\nPies ma wyniary: "<<height<<"m "<<lenght<<"m"
-		<<"\nPies wa¿y: "<<weight<<"kg"<<endl;
+		<<"\nPies waï¿½y: "<<weight<<"kg"<<endl;
 	sit();
 	layDown();
 	shake();
